@@ -1,0 +1,12 @@
+dependencies:
+  cache_directories:
+    - "~/.meteor"
+    - "/usr/local/bin"
+
+  override:
+    # instala o meteor
+    - meteor || curl https://install.meteor.com | /bin/sh
+
+test:
+  override:
+    - JASMINE_BROWSER=PhantomJS meteor --test --release velocity:METEOR@1.1.0.2_3 --port 4000
