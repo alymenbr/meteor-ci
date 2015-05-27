@@ -1,7 +1,7 @@
 dependencies:
   cache_directories:
     - "~/.meteor"
-    - "/usr/bin/meteor"
+    - "/usr/bin"
 
   override:
     # instala o meteor
