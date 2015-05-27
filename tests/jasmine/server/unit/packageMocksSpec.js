@@ -4,171 +4,6 @@
 var packageMetadata = {
   "standard-app-packages": {},
   "insecure": {},
-  "json": {},
-  "base64": {
-    "Base64": {
-      "type": "object",
-      "members": {
-        "encode": {
-          "type": "function"
-        },
-        "newBinary": {
-          "type": "function"
-        },
-        "decode": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "ejson": {
-    "EJSON": {
-      "type": "object",
-      "members": {
-        "addType": {
-          "type": "function"
-        },
-        "toJSONValue": {
-          "type": "function"
-        },
-        "fromJSONValue": {
-          "type": "function"
-        },
-        "stringify": {
-          "type": "function"
-        },
-        "parse": {
-          "type": "function"
-        },
-        "isBinary": {
-          "type": "function"
-        },
-        "equals": {
-          "type": "function"
-        },
-        "clone": {
-          "type": "function"
-        },
-        "newBinary": {
-          "type": "function"
-        }
-      }
-    },
-    "EJSONTest": {
-      "type": "object"
-    }
-  },
-  "logging": {
-    "Log": {
-      "type": "function",
-      "members": {
-        "outputFormat": {
-          "type": "constant",
-          "value": "json"
-        },
-        "debug": {
-          "type": "function"
-        },
-        "info": {
-          "type": "function"
-        },
-        "warn": {
-          "type": "function"
-        },
-        "error": {
-          "type": "function"
-        },
-        "parse": {
-          "type": "function"
-        },
-        "format": {
-          "type": "function"
-        },
-        "objFromText": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "routepolicy": {
-    "RoutePolicy": {
-      "type": "object",
-      "members": {
-        "urlPrefixTypes": {
-          "type": "object",
-          "members": {
-            "/sockjs/": {
-              "type": "constant",
-              "value": "network"
-            }
-          }
-        },
-        "urlPrefixMatches": {
-          "type": "function"
-        },
-        "checkType": {
-          "type": "function"
-        },
-        "checkUrlPrefix": {
-          "type": "function"
-        },
-        "checkForConflictWithStatic": {
-          "type": "function"
-        },
-        "declare": {
-          "type": "function"
-        },
-        "isValidUrl": {
-          "type": "function"
-        },
-        "classify": {
-          "type": "function"
-        },
-        "urlPrefixesFor": {
-          "type": "function"
-        }
-      }
-    },
-    "RoutePolicyTest": {
-      "type": "object",
-      "members": {
-        "Constructor": {
-          "type": "function",
-          "members": {
-            "prototype": {
-              "type": "object",
-              "members": {
-                "urlPrefixMatches": {
-                  "type": "function"
-                },
-                "checkType": {
-                  "type": "function"
-                },
-                "checkUrlPrefix": {
-                  "type": "function"
-                },
-                "checkForConflictWithStatic": {
-                  "type": "function"
-                },
-                "declare": {
-                  "type": "function"
-                },
-                "isValidUrl": {
-                  "type": "function"
-                },
-                "classify": {
-                  "type": "function"
-                },
-                "urlPrefixesFor": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
   "tracker": {
     "Tracker": {
       "type": "object",
@@ -297,6 +132,272 @@ var packageMetadata = {
         },
         "depend": {
           "type": "function"
+        }
+      }
+    }
+  },
+  "json": {},
+  "base64": {
+    "Base64": {
+      "type": "object",
+      "members": {
+        "encode": {
+          "type": "function"
+        },
+        "newBinary": {
+          "type": "function"
+        },
+        "decode": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "ejson": {
+    "EJSON": {
+      "type": "object",
+      "members": {
+        "addType": {
+          "type": "function"
+        },
+        "toJSONValue": {
+          "type": "function"
+        },
+        "fromJSONValue": {
+          "type": "function"
+        },
+        "stringify": {
+          "type": "function"
+        },
+        "parse": {
+          "type": "function"
+        },
+        "isBinary": {
+          "type": "function"
+        },
+        "equals": {
+          "type": "function"
+        },
+        "clone": {
+          "type": "function"
+        },
+        "newBinary": {
+          "type": "function"
+        }
+      }
+    },
+    "EJSONTest": {
+      "type": "object"
+    }
+  },
+  "check": {
+    "check": {
+      "type": "function"
+    },
+    "Match": {
+      "type": "object",
+      "members": {
+        "Optional": {
+          "type": "function"
+        },
+        "OneOf": {
+          "type": "function"
+        },
+        "Any": {
+          "type": "array"
+        },
+        "Where": {
+          "type": "function"
+        },
+        "ObjectIncluding": {
+          "type": "function"
+        },
+        "ObjectWithValues": {
+          "type": "function"
+        },
+        "Integer": {
+          "type": "array"
+        },
+        "Error": {
+          "type": "function",
+          "refID": 13,
+          "members": {
+            "captureStackTrace": {
+              "type": "function"
+            },
+            "stackTraceLimit": {
+              "type": "constant",
+              "value": 10
+            },
+            "prepareStackTrace": {
+              "type": "function"
+            },
+            "prototype": {
+              "type": "object",
+              "members": {
+                "constructor": {
+                  "ref": 13
+                }
+              }
+            }
+          }
+        },
+        "test": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "random": {
+    "Random": {
+      "type": "object",
+      "members": {
+        "createWithSeeds": {
+          "type": "function"
+        },
+        "fraction": {
+          "type": "function"
+        },
+        "hexString": {
+          "type": "function"
+        },
+        "id": {
+          "type": "function"
+        },
+        "secret": {
+          "type": "function"
+        },
+        "choice": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "logging": {
+    "Log": {
+      "type": "function",
+      "members": {
+        "outputFormat": {
+          "type": "constant",
+          "value": "json"
+        },
+        "debug": {
+          "type": "function"
+        },
+        "info": {
+          "type": "function"
+        },
+        "warn": {
+          "type": "function"
+        },
+        "error": {
+          "type": "function"
+        },
+        "parse": {
+          "type": "function"
+        },
+        "format": {
+          "type": "function"
+        },
+        "objFromText": {
+          "type": "function"
+        }
+      }
+    }
+  },
+  "retry": {
+    "Retry": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "clear": {
+              "type": "function"
+            },
+            "retryLater": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "routepolicy": {
+    "RoutePolicy": {
+      "type": "object",
+      "members": {
+        "urlPrefixTypes": {
+          "type": "object",
+          "members": {
+            "/sockjs/": {
+              "type": "constant",
+              "value": "network"
+            }
+          }
+        },
+        "urlPrefixMatches": {
+          "type": "function"
+        },
+        "checkType": {
+          "type": "function"
+        },
+        "checkUrlPrefix": {
+          "type": "function"
+        },
+        "checkForConflictWithStatic": {
+          "type": "function"
+        },
+        "declare": {
+          "type": "function"
+        },
+        "isValidUrl": {
+          "type": "function"
+        },
+        "classify": {
+          "type": "function"
+        },
+        "urlPrefixesFor": {
+          "type": "function"
+        }
+      }
+    },
+    "RoutePolicyTest": {
+      "type": "object",
+      "members": {
+        "Constructor": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "urlPrefixMatches": {
+                  "type": "function"
+                },
+                "checkType": {
+                  "type": "function"
+                },
+                "checkUrlPrefix": {
+                  "type": "function"
+                },
+                "checkForConflictWithStatic": {
+                  "type": "function"
+                },
+                "declare": {
+                  "type": "function"
+                },
+                "isValidUrl": {
+                  "type": "function"
+                },
+                "classify": {
+                  "type": "function"
+                },
+                "urlPrefixesFor": {
+                  "type": "function"
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -5958,31 +6059,6 @@ var packageMetadata = {
       }
     }
   },
-  "random": {
-    "Random": {
-      "type": "object",
-      "members": {
-        "createWithSeeds": {
-          "type": "function"
-        },
-        "fraction": {
-          "type": "function"
-        },
-        "hexString": {
-          "type": "function"
-        },
-        "id": {
-          "type": "function"
-        },
-        "secret": {
-          "type": "function"
-        },
-        "choice": {
-          "type": "function"
-        }
-      }
-    }
-  },
   "geojson-utils": {
     "GeoJSON": {
       "type": "object",
@@ -7087,7 +7163,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "c9b5cee664a84779f7f3acbf1d01091e94796dc8"
+                  "value": "fcd6e69c1d0a74a107b65afebb2cfaa8028ebfa8"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7291,82 +7367,6 @@ var packageMetadata = {
       "type": "function"
     }
   },
-  "check": {
-    "check": {
-      "type": "function"
-    },
-    "Match": {
-      "type": "object",
-      "members": {
-        "Optional": {
-          "type": "function"
-        },
-        "OneOf": {
-          "type": "function"
-        },
-        "Any": {
-          "type": "array"
-        },
-        "Where": {
-          "type": "function"
-        },
-        "ObjectIncluding": {
-          "type": "function"
-        },
-        "ObjectWithValues": {
-          "type": "function"
-        },
-        "Integer": {
-          "type": "array"
-        },
-        "Error": {
-          "type": "function",
-          "refID": 13,
-          "members": {
-            "captureStackTrace": {
-              "type": "function"
-            },
-            "stackTraceLimit": {
-              "type": "constant",
-              "value": 10
-            },
-            "prepareStackTrace": {
-              "type": "function"
-            },
-            "prototype": {
-              "type": "object",
-              "members": {
-                "constructor": {
-                  "ref": 13
-                }
-              }
-            }
-          }
-        },
-        "test": {
-          "type": "function"
-        }
-      }
-    }
-  },
-  "retry": {
-    "Retry": {
-      "type": "function",
-      "members": {
-        "prototype": {
-          "type": "object",
-          "members": {
-            "clear": {
-              "type": "function"
-            },
-            "retryLater": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
   "autopublish": {},
   "callback-hook": {
     "Hook": {
@@ -7558,6 +7558,23 @@ var packageMetadata = {
               }
             }
           }
+        }
+      }
+    }
+  },
+  "coffeescript": {},
+  "practicalmeteor:loglevel": {
+    "loglevel": {
+      "type": "object",
+      "members": {
+        "createLogger": {
+          "type": "function"
+        },
+        "createPackageLogger": {
+          "type": "function"
+        },
+        "createAppLogger": {
+          "type": "function"
         }
       }
     }
@@ -8183,23 +8200,6 @@ var packageMetadata = {
       }
     }
   },
-  "coffeescript": {},
-  "practicalmeteor:loglevel": {
-    "loglevel": {
-      "type": "object",
-      "members": {
-        "createLogger": {
-          "type": "function"
-        },
-        "createPackageLogger": {
-          "type": "function"
-        },
-        "createAppLogger": {
-          "type": "function"
-        }
-      }
-    }
-  },
   "sanjo:long-running-child-process": {
     "LongRunningChildProcess": {
       "type": "function",
@@ -8658,36 +8658,6 @@ var packageMetadata = {
     }
   },
   "velocity:shim": {},
-  "velocity:console-reporter": {
-    "ConsoleReporter": {
-      "type": "function",
-      "members": {
-        "prototype": {
-          "type": "object",
-          "members": {
-            "reportSummary": {
-              "type": "function"
-            },
-            "reportPassed": {
-              "type": "function"
-            },
-            "reportFailed": {
-              "type": "function"
-            },
-            "reportOneFailed": {
-              "type": "function"
-            },
-            "totalTime": {
-              "type": "function"
-            },
-            "formatTime": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
   "velocity:meteor-stubs": {
     "MeteorStubs": {
       "type": "object",
@@ -8732,11 +8702,11 @@ var packageMetadata = {
                 },
                 "pid": {
                   "type": "constant",
-                  "value": 16773
+                  "value": 26501
                 },
                 "fout": {
                   "type": "constant",
-                  "value": 27
+                  "value": 29
                 },
                 "child": {
                   "type": "object",
@@ -8755,7 +8725,7 @@ var packageMetadata = {
                     },
                     "pid": {
                       "type": "constant",
-                      "value": 16773
+                      "value": 26501
                     },
                     "stdin": {
                       "type": "null",
@@ -8876,6 +8846,672 @@ var packageMetadata = {
       }
     }
   },
+  "url": {
+    "URL": {
+      "type": "object"
+    }
+  },
+  "http": {
+    "HTTP": {
+      "type": "object",
+      "members": {
+        "get": {
+          "type": "function"
+        },
+        "post": {
+          "type": "function"
+        },
+        "put": {
+          "type": "function"
+        },
+        "del": {
+          "type": "function"
+        },
+        "call": {
+          "type": "function"
+        }
+      }
+    },
+    "HTTPInternals": {
+      "type": "object",
+      "members": {
+        "NpmModules": {
+          "type": "object",
+          "members": {
+            "request": {
+              "type": "object",
+              "members": {
+                "version": {
+                  "type": "constant",
+                  "value": "2.53.0"
+                },
+                "module": {
+                  "type": "function",
+                  "members": {
+                    "get": {
+                      "type": "function"
+                    },
+                    "head": {
+                      "type": "function"
+                    },
+                    "post": {
+                      "type": "function"
+                    },
+                    "put": {
+                      "type": "function"
+                    },
+                    "patch": {
+                      "type": "function"
+                    },
+                    "del": {
+                      "type": "function"
+                    },
+                    "jar": {
+                      "type": "function"
+                    },
+                    "cookie": {
+                      "type": "function"
+                    },
+                    "defaults": {
+                      "type": "function"
+                    },
+                    "forever": {
+                      "type": "function"
+                    },
+                    "Request": {
+                      "type": "function",
+                      "members": {
+                        "super_": {
+                          "type": "function",
+                          "refID": 25,
+                          "members": {
+                            "super_": {
+                              "type": "function",
+                              "members": {
+                                "listenerCount": {
+                                  "type": "function"
+                                },
+                                "prototype": {
+                                  "type": "object",
+                                  "members": {
+                                    "setMaxListeners": {
+                                      "type": "function",
+                                      "refID": 30
+                                    },
+                                    "emit": {
+                                      "type": "function",
+                                      "refID": 32
+                                    },
+                                    "addListener": {
+                                      "type": "function",
+                                      "refID": 34
+                                    },
+                                    "on": {
+                                      "ref": 34
+                                    },
+                                    "once": {
+                                      "type": "function",
+                                      "refID": 36
+                                    },
+                                    "removeListener": {
+                                      "type": "function",
+                                      "refID": 38
+                                    },
+                                    "removeAllListeners": {
+                                      "type": "function",
+                                      "refID": 40
+                                    },
+                                    "listeners": {
+                                      "type": "function",
+                                      "refID": 42
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "Readable": {
+                              "type": "function",
+                              "refID": 44,
+                              "members": {
+                                "ReadableState": {
+                                  "type": "function"
+                                },
+                                "super_": {
+                                  "ref": 25
+                                },
+                                "prototype": {
+                                  "type": "object",
+                                  "members": {
+                                    "push": {
+                                      "type": "function",
+                                      "refID": 48
+                                    },
+                                    "unshift": {
+                                      "type": "function",
+                                      "refID": 50
+                                    },
+                                    "setEncoding": {
+                                      "type": "function",
+                                      "refID": 52
+                                    },
+                                    "read": {
+                                      "type": "function",
+                                      "refID": 54
+                                    },
+                                    "pipe": {
+                                      "type": "function",
+                                      "refID": 56
+                                    },
+                                    "unpipe": {
+                                      "type": "function",
+                                      "refID": 58
+                                    },
+                                    "on": {
+                                      "type": "function",
+                                      "refID": 60
+                                    },
+                                    "addListener": {
+                                      "ref": 60
+                                    },
+                                    "resume": {
+                                      "type": "function",
+                                      "refID": 62
+                                    },
+                                    "pause": {
+                                      "type": "function",
+                                      "refID": 64
+                                    },
+                                    "wrap": {
+                                      "type": "function",
+                                      "refID": 66
+                                    },
+                                    "setMaxListeners": {
+                                      "ref": 30
+                                    },
+                                    "emit": {
+                                      "ref": 32
+                                    },
+                                    "once": {
+                                      "ref": 36
+                                    },
+                                    "removeListener": {
+                                      "ref": 38
+                                    },
+                                    "removeAllListeners": {
+                                      "ref": 40
+                                    },
+                                    "listeners": {
+                                      "ref": 42
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "Writable": {
+                              "type": "function",
+                              "members": {
+                                "WritableState": {
+                                  "type": "function"
+                                },
+                                "super_": {
+                                  "ref": 25
+                                },
+                                "prototype": {
+                                  "type": "object",
+                                  "members": {
+                                    "pipe": {
+                                      "type": "function"
+                                    },
+                                    "write": {
+                                      "type": "function",
+                                      "refID": 74
+                                    },
+                                    "end": {
+                                      "type": "function",
+                                      "refID": 76
+                                    },
+                                    "setMaxListeners": {
+                                      "ref": 30
+                                    },
+                                    "emit": {
+                                      "ref": 32
+                                    },
+                                    "addListener": {
+                                      "ref": 34
+                                    },
+                                    "on": {
+                                      "ref": 34
+                                    },
+                                    "once": {
+                                      "ref": 36
+                                    },
+                                    "removeListener": {
+                                      "ref": 38
+                                    },
+                                    "removeAllListeners": {
+                                      "ref": 40
+                                    },
+                                    "listeners": {
+                                      "ref": 42
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "Duplex": {
+                              "type": "function",
+                              "refID": 78,
+                              "members": {
+                                "super_": {
+                                  "ref": 44
+                                },
+                                "prototype": {
+                                  "type": "object",
+                                  "members": {
+                                    "write": {
+                                      "ref": 74
+                                    },
+                                    "end": {
+                                      "ref": 76
+                                    },
+                                    "push": {
+                                      "ref": 48
+                                    },
+                                    "unshift": {
+                                      "ref": 50
+                                    },
+                                    "setEncoding": {
+                                      "ref": 52
+                                    },
+                                    "read": {
+                                      "ref": 54
+                                    },
+                                    "pipe": {
+                                      "ref": 56
+                                    },
+                                    "unpipe": {
+                                      "ref": 58
+                                    },
+                                    "on": {
+                                      "ref": 60
+                                    },
+                                    "addListener": {
+                                      "ref": 60
+                                    },
+                                    "resume": {
+                                      "ref": 62
+                                    },
+                                    "pause": {
+                                      "ref": 64
+                                    },
+                                    "wrap": {
+                                      "ref": 66
+                                    },
+                                    "setMaxListeners": {
+                                      "ref": 30
+                                    },
+                                    "emit": {
+                                      "ref": 32
+                                    },
+                                    "once": {
+                                      "ref": 36
+                                    },
+                                    "removeListener": {
+                                      "ref": 38
+                                    },
+                                    "removeAllListeners": {
+                                      "ref": 40
+                                    },
+                                    "listeners": {
+                                      "ref": 42
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "Transform": {
+                              "type": "function",
+                              "refID": 80,
+                              "members": {
+                                "super_": {
+                                  "ref": 78
+                                },
+                                "prototype": {
+                                  "type": "object",
+                                  "members": {
+                                    "push": {
+                                      "type": "function",
+                                      "refID": 82
+                                    },
+                                    "write": {
+                                      "ref": 74
+                                    },
+                                    "end": {
+                                      "ref": 76
+                                    },
+                                    "unshift": {
+                                      "ref": 50
+                                    },
+                                    "setEncoding": {
+                                      "ref": 52
+                                    },
+                                    "read": {
+                                      "ref": 54
+                                    },
+                                    "pipe": {
+                                      "ref": 56
+                                    },
+                                    "unpipe": {
+                                      "ref": 58
+                                    },
+                                    "on": {
+                                      "ref": 60
+                                    },
+                                    "addListener": {
+                                      "ref": 60
+                                    },
+                                    "resume": {
+                                      "ref": 62
+                                    },
+                                    "pause": {
+                                      "ref": 64
+                                    },
+                                    "wrap": {
+                                      "ref": 66
+                                    },
+                                    "setMaxListeners": {
+                                      "ref": 30
+                                    },
+                                    "emit": {
+                                      "ref": 32
+                                    },
+                                    "once": {
+                                      "ref": 36
+                                    },
+                                    "removeListener": {
+                                      "ref": 38
+                                    },
+                                    "removeAllListeners": {
+                                      "ref": 40
+                                    },
+                                    "listeners": {
+                                      "ref": 42
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "PassThrough": {
+                              "type": "function",
+                              "members": {
+                                "super_": {
+                                  "ref": 80
+                                },
+                                "prototype": {
+                                  "type": "object",
+                                  "members": {
+                                    "push": {
+                                      "ref": 82
+                                    },
+                                    "write": {
+                                      "ref": 74
+                                    },
+                                    "end": {
+                                      "ref": 76
+                                    },
+                                    "unshift": {
+                                      "ref": 50
+                                    },
+                                    "setEncoding": {
+                                      "ref": 52
+                                    },
+                                    "read": {
+                                      "ref": 54
+                                    },
+                                    "pipe": {
+                                      "ref": 56
+                                    },
+                                    "unpipe": {
+                                      "ref": 58
+                                    },
+                                    "on": {
+                                      "ref": 60
+                                    },
+                                    "addListener": {
+                                      "ref": 60
+                                    },
+                                    "resume": {
+                                      "ref": 62
+                                    },
+                                    "pause": {
+                                      "ref": 64
+                                    },
+                                    "wrap": {
+                                      "ref": 66
+                                    },
+                                    "setMaxListeners": {
+                                      "ref": 30
+                                    },
+                                    "emit": {
+                                      "ref": 32
+                                    },
+                                    "once": {
+                                      "ref": 36
+                                    },
+                                    "removeListener": {
+                                      "ref": 38
+                                    },
+                                    "removeAllListeners": {
+                                      "ref": 40
+                                    },
+                                    "listeners": {
+                                      "ref": 42
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "Stream": {
+                              "ref": 25
+                            },
+                            "prototype": {
+                              "type": "object",
+                              "members": {
+                                "pipe": {
+                                  "type": "function"
+                                },
+                                "setMaxListeners": {
+                                  "ref": 30
+                                },
+                                "emit": {
+                                  "ref": 32
+                                },
+                                "addListener": {
+                                  "ref": 34
+                                },
+                                "on": {
+                                  "ref": 34
+                                },
+                                "once": {
+                                  "ref": 36
+                                },
+                                "removeListener": {
+                                  "ref": 38
+                                },
+                                "removeAllListeners": {
+                                  "ref": 40
+                                },
+                                "listeners": {
+                                  "ref": 42
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "debug": {
+                          "type": "undefined"
+                        },
+                        "defaultProxyHeaderWhiteList": {
+                          "type": "array"
+                        },
+                        "defaultProxyHeaderExclusiveList": {
+                          "type": "array"
+                        },
+                        "prototype": {
+                          "type": "object",
+                          "members": {
+                            "setupTunnel": {
+                              "type": "function"
+                            },
+                            "init": {
+                              "type": "function"
+                            },
+                            "getNewAgent": {
+                              "type": "function"
+                            },
+                            "start": {
+                              "type": "function"
+                            },
+                            "onRequestError": {
+                              "type": "function"
+                            },
+                            "onRequestResponse": {
+                              "type": "function"
+                            },
+                            "abort": {
+                              "type": "function"
+                            },
+                            "pipeDest": {
+                              "type": "function"
+                            },
+                            "qs": {
+                              "type": "function"
+                            },
+                            "form": {
+                              "type": "function"
+                            },
+                            "multipart": {
+                              "type": "function"
+                            },
+                            "json": {
+                              "type": "function"
+                            },
+                            "getHeader": {
+                              "type": "function"
+                            },
+                            "auth": {
+                              "type": "function"
+                            },
+                            "aws": {
+                              "type": "function"
+                            },
+                            "httpSignature": {
+                              "type": "function"
+                            },
+                            "hawk": {
+                              "type": "function"
+                            },
+                            "oauth": {
+                              "type": "function"
+                            },
+                            "jar": {
+                              "type": "function"
+                            },
+                            "pipe": {
+                              "type": "function"
+                            },
+                            "write": {
+                              "type": "function"
+                            },
+                            "end": {
+                              "type": "function"
+                            },
+                            "pause": {
+                              "type": "function"
+                            },
+                            "resume": {
+                              "type": "function"
+                            },
+                            "destroy": {
+                              "type": "function"
+                            },
+                            "toJSON": {
+                              "type": "function"
+                            },
+                            "setMaxListeners": {
+                              "ref": 30
+                            },
+                            "emit": {
+                              "ref": 32
+                            },
+                            "addListener": {
+                              "ref": 34
+                            },
+                            "on": {
+                              "ref": 34
+                            },
+                            "once": {
+                              "ref": 36
+                            },
+                            "removeListener": {
+                              "ref": 38
+                            },
+                            "removeAllListeners": {
+                              "ref": 40
+                            },
+                            "listeners": {
+                              "ref": 42
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "initParams": {
+                      "type": "function"
+                    },
+                    "debug": {
+                      "type": "undefined"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "xolvio:cucumber": {},
+  "velocity:console-reporter": {
+    "ConsoleReporter": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "reportSummary": {
+              "type": "function"
+            },
+            "reportPassed": {
+              "type": "function"
+            },
+            "reportFailed": {
+              "type": "function"
+            },
+            "reportOneFailed": {
+              "type": "function"
+            },
+            "totalTime": {
+              "type": "function"
+            },
+            "formatTime": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
   "reload": {},
   "autoupdate": {
     "Autoupdate": {
@@ -8883,11 +9519,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "9458e20b17b5d10117a8d06cbad1d5848cd5a8f3"
+          "value": "1b0ac1110d802eca5d7b7f868a39009cdc2b9ff4"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "f3aa17a1e572be165276f04c87e0c4c585fec855"
+          "value": "79694df3c96fe2a92b3b8a2f8dda355691ba684e"
         },
         "autoupdateVersionCordova": {
           "type": "constant",

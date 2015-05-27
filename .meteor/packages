@@ -6,6 +6,7 @@
 standard-app-packages
 insecure
 mrt:moment@2.8.1
-velocity:console-reporter
 sanjo:jasmine@0.13.7
 autopublish
+xolvio:cucumber
+velocity:console-reporter
