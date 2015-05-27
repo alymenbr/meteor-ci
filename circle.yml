@@ -1,9 +1,15 @@
 dependencies:
   cache_directories:
     - "~/.meteor"
+    - "~/.npm"  
+    - "/usr/local/lib/node_modules/"
     - "/usr/bin"
 
   override:
+    # instala o phantomjs para usar com o cucumber
+    - sudo npm install -g phantomjs
+    - export PHANTOM_PATH=/usr/local/bin/phantomjs
+
     # instala o meteor
     - meteor || curl https://install.meteor.com | /bin/sh
 
