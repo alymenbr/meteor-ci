@@ -42,10 +42,3 @@ describe("Point Assignment", function () {
     expect(Players.findOne({name: "Grace Hopper"}).score).toBe(graceInitialPoints + 5);
   });
 });
-
-describe("Player Ordering", function () {
-  it("should result in a list where the first player has as many or more points than the second player", function () {
-    var players = Template.leaderboard.players().fetch();
-    expect(players[0].score >= players[1].score).toBe(true);
-  });
-});
